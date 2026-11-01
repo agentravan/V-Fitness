@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const runtime = "edge";
+// Uses only Web-standard APIs (Request/Response/fetch), so it runs on Node or Edge.
 
 type Lead = {
   name: string;

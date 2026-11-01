@@ -1,6 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
 export const alt = "V Fitness — gym in International City, Dubai. Strength, CrossFit, HIIT and personal training.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

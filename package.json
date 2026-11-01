@@ -10,18 +10,18 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "framer-motion": "^12.23.0",
+    "framer-motion": "^12.43.0",
     "lucide-react": "^0.540.0",
-    "next": "^16.0.10",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.0",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^22.10.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "tailwindcss": "^4.1.0",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.7.0"
   },
   "engines": {
