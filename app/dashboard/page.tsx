@@ -462,9 +462,9 @@ function Portal({ onLogout }: { onLogout: () => void }) {
             <StatCard icon={CircleDollarSign} label="Monthly Revenue" value={usd.format(DEMO_KPIS.monthlyRevenue)} hint={`▲ ${DEMO_KPIS.revenueChangePct}% vs last month`} tone="amber" i={3} />
           </section>
 
-          <div className="grid gap-6 xl:grid-cols-[1.4fr_1fr]">
+          <div className="grid grid-cols-1 gap-6 xl:grid-cols-[1.4fr_1fr]">
             {/* Attendance chart */}
-            <section id="attendance" aria-labelledby="att-title" className="card scroll-mt-20 p-5 sm:p-6">
+            <section id="attendance" aria-labelledby="att-title" className="card min-w-0 scroll-mt-20 p-5 sm:p-6">
               <div className="flex items-center justify-between">
                 <div>
                   <h2 id="att-title" className="text-2xl font-bold uppercase">Weekly attendance</h2>
@@ -476,7 +476,7 @@ function Portal({ onLogout }: { onLogout: () => void }) {
             </section>
 
             {/* Expiring panel */}
-            <section id="renewals" aria-labelledby="exp-title" className="card scroll-mt-20 p-5 sm:p-6">
+            <section id="renewals" aria-labelledby="exp-title" className="card min-w-0 scroll-mt-20 p-5 sm:p-6">
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <h2 id="exp-title" className="text-2xl font-bold uppercase">Expiring this week</h2>
@@ -491,7 +491,7 @@ function Portal({ onLogout }: { onLogout: () => void }) {
                   Remind all
                 </button>
               </div>
-              <ChannelPicker value={channel} onChange={setChannel} className="mt-4" />
+              <ChannelPicker value={channel} onChange={setChannel} className="mt-4 max-w-full" />
               <ul className="mt-4 max-h-[236px] space-y-2 overflow-y-auto pr-1">
                 {expiringList.map((m) => (
                   <li key={m.id} className="flex items-center gap-3 rounded-xl border border-line bg-ink/60 px-3 py-2.5">
