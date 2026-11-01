@@ -101,7 +101,11 @@ export function daysSinceVisit(m: Member) {
 }
 export const visitsInLast = (m: Member, days: number) =>
   m.visits.slice(-days).split("").filter((c) => c === "1").length + (m.checkInAt !== null ? 1 : 0);
-export const isAtRisk = (m: Member, today = startOfDay()) => statusOf(m, today) !== "Expired" && daysSinceVisit(m) >= 14;
+/** Active plan, joined over 14 days ago, and no visit in the last 14 days. */
+export const isAtRisk = (m: Member, today = startOfDay()) =>
+  statusOf(m, today) !== "Expired" &&
+  daysSinceVisit(m) >= 14 &&
+  (today.getTime() - parseISO(m.joinDate).getTime()) / 86_400_000 > 14;
 
 export const fmtMinutes = (min: number) => {
   const h = Math.floor(min / 60), m = min % 60;
