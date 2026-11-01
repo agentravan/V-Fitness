@@ -316,8 +316,14 @@ function Portal({ onLogout }: { onLogout: () => void }) {
         (plan === "All" || m.plan === plan) &&
         (!q || m.name.toLowerCase().includes(q) || m.id.toLowerCase().includes(q) || m.phone.replace(/\s/g, "").includes(q.replace(/\s/g, ""))),
     );
+    // "Expiry" sort surfaces what needs action first: expiring → active → expired.
+    const rank: Record<MemberStatus, number> = { "Expiring Soon": 0, Active: 1, Expired: 2 };
     rows.sort((a, b) =>
-      sort === "name" ? a.name.localeCompare(b.name) : sort === "join" ? b.joinDate.localeCompare(a.joinDate) : a.expiryDate.localeCompare(b.expiryDate),
+      sort === "name"
+        ? a.name.localeCompare(b.name)
+        : sort === "join"
+          ? b.joinDate.localeCompare(a.joinDate)
+          : rank[a.status] - rank[b.status] || (a.status === "Expired" ? b.days - a.days : a.days - b.days),
     );
     return rows;
   }, [withStatus, query, status, plan, sort]);
@@ -538,7 +544,7 @@ function Portal({ onLogout }: { onLogout: () => void }) {
                 <label className="block">
                   <span className="sr-only">Sort</span>
                   <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className="field md:w-48">
-                    <option value="expiry">Expiry (soonest)</option>
+                    <option value="expiry">Needs attention first</option>
                     <option value="name">Name (A–Z)</option>
                     <option value="join">Join date (newest)</option>
                   </select>
