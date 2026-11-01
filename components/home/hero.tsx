@@ -143,7 +143,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8 }}
-          className="hud card absolute right-[6%] top-[14%] hidden rounded-xl px-4 py-3 lg:block"
+          className="hud card absolute right-[6%] top-[14%] hidden rounded-xl px-4 py-3 xl:block"
         >
           <p className="text-[10px] uppercase tracking-[0.25em] text-slate-400">Established</p>
           <p className="font-display text-3xl font-extrabold italic text-white">Oct 2008</p>
@@ -153,7 +153,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1, y: [0, -6, 0] }}
           transition={{ delay: 1, y: { duration: 4, repeat: Infinity, ease: "easeInOut" } }}
-          className="hud card absolute right-[30%] top-[44%] hidden rounded-xl px-4 py-3 text-left lg:block"
+          className="hud card absolute right-[30%] top-[44%] hidden rounded-xl px-4 py-3 text-left xl:block"
         >
           <span className="block text-[10px] uppercase tracking-[0.25em] text-brand">Free pass</span>
           <span className="block font-display text-2xl font-extrabold italic text-white">3-Day Trial</span>
