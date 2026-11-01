@@ -56,7 +56,7 @@ export function TrialSection() {
     <section id="trial" aria-labelledby="trial-title" className="container-x scroll-mt-24 py-12">
       <Reveal className="relative overflow-hidden rounded-[2rem] border border-line bg-ink-2 p-6 sm:p-10 lg:p-14">
         <div aria-hidden className="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full bg-brand/25 blur-3xl" />
-        <div aria-hidden className="pointer-events-none absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-rose/20 blur-3xl" />
+        <div aria-hidden className="pointer-events-none absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-electric/20 blur-3xl" />
         <div className="relative grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <p className="eyebrow">Free 3-day pass</p>

@@ -132,7 +132,7 @@ function DemoLogin({ onSuccess }: { onSuccess: () => void }) {
     <div className="relative grid min-h-dvh place-items-center overflow-hidden px-4 py-12">
       <div aria-hidden className="grid-bg pointer-events-none absolute inset-0" />
       <div aria-hidden className="pointer-events-none absolute -left-40 top-10 h-[480px] w-[480px] rounded-full bg-brand/25 blur-[120px]" />
-      <div aria-hidden className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-rose/20 blur-[120px]" />
+      <div aria-hidden className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-electric/20 blur-[120px]" />
 
       <div className="relative w-full max-w-md">
         <Link href="/" className="mb-6 inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white">
@@ -143,7 +143,7 @@ function DemoLogin({ onSuccess }: { onSuccess: () => void }) {
         <motion.div
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="mb-4 rounded-2xl border border-brand/40 bg-gradient-to-r from-brand/20 to-rose/10 p-4"
+          className="mb-4 rounded-2xl border border-brand/40 bg-gradient-to-r from-brand/20 to-electric/10 p-4"
         >
           <div className="flex items-start gap-3">
             <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-brand" aria-hidden />
@@ -440,10 +440,10 @@ function Portal({ onLogout }: { onLogout: () => void }) {
               </span>
               <button className="relative grid h-10 w-10 place-items-center rounded-full border border-line text-slate-400 hover:text-white" aria-label={`${kpis.expiring} memberships expiring`}>
                 <Bell className="h-4 w-4" />
-                {kpis.expiring > 0 && <span className="absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-rose px-1 text-[10px] font-bold text-white">{kpis.expiring}</span>}
+                {kpis.expiring > 0 && <span className="absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-electric px-1 text-[10px] font-bold text-white">{kpis.expiring}</span>}
               </button>
               <div className="hidden items-center gap-2 rounded-full border border-line py-1 pl-1 pr-3 sm:flex">
-                <span className="grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br from-brand to-rose text-xs font-bold text-ink">AD</span>
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br from-brand to-electric text-xs font-bold text-ink">AD</span>
                 <span className="text-xs text-slate-300">{DEMO_CREDENTIALS.email}</span>
               </div>
               <button onClick={onLogout} className="grid h-10 w-10 place-items-center rounded-full border border-line text-slate-400 hover:text-white lg:hidden" aria-label="Log out">
@@ -826,7 +826,7 @@ function Avatar({ name }: { name: string }) {
 
 function PlanChip({ plan, inline }: { plan: PlanType; inline?: boolean }) {
   const color =
-    plan === "Annual" ? "text-violet-300 bg-violet-500/10" : plan === "Quarterly" ? "text-sky-300 bg-sky-500/10" : plan === "Personal Training" ? "text-orange-300 bg-orange-500/10" : "text-slate-300 bg-white/5";
+    plan === "Annual" ? "text-violet-300 bg-violet-500/10" : plan === "Quarterly" ? "text-sky-300 bg-sky-500/10" : plan === "Personal Training" ? "text-cyan-300 bg-cyan-500/10" : "text-slate-300 bg-white/5";
   if (inline) return <span className={color.split(" ")[0]}>{plan}</span>;
   return <span className={`inline-block rounded-full px-2.5 py-1 text-xs font-medium ${color}`}>{plan}</span>;
 }
@@ -887,7 +887,7 @@ function ReminderButton({
       onClick={onSend}
       disabled={sending}
       className={`inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors disabled:opacity-70 ${
-        sent ? "border-sky-500/40 bg-sky-500/10 text-sky-300 hover:bg-sky-500/20" : "border-brand/50 bg-brand/10 text-orange-200 hover:bg-brand/20"
+        sent ? "border-sky-500/40 bg-sky-500/10 text-sky-300 hover:bg-sky-500/20" : "border-brand/50 bg-brand/10 text-cyan-100 hover:bg-brand/20"
       } ${full ? "w-full" : ""}`}
       title={sent ? `Last sent via ${sent.channel} ${ago(sent.at, now)} — click to resend` : "Send renewal reminder"}
     >

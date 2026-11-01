@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Gym in International City, Dubai — strength, CrossFit, HIIT and personal training.",
     start_url: "/",
     display: "standalone",
-    background_color: "#09090b",
-    theme_color: "#f97316",
-    icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
+    background_color: "#02060c",
+    theme_color: "#22d3ee",
+    icons: [{ src: "/icon.png", sizes: "64x64", type: "image/png" }, { src: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   };
 }

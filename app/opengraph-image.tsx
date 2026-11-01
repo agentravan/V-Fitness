@@ -15,7 +15,7 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 72,
-          background: "radial-gradient(circle at 15% 20%, rgba(249,115,22,0.45), transparent 45%), radial-gradient(circle at 90% 90%, rgba(225,29,72,0.35), transparent 45%), #09090b",
+          background: "radial-gradient(circle at 15% 20%, rgba(34,211,238,0.45), transparent 45%), radial-gradient(circle at 90% 90%, rgba(225,29,72,0.35), transparent 45%), #09090b",
           color: "#f8fafc",
           fontFamily: "sans-serif",
         }}
@@ -26,7 +26,7 @@ export default function OpengraphImage() {
               width: 76,
               height: 76,
               borderRadius: 20,
-              background: "linear-gradient(135deg,#fb923c,#e11d48)",
+              background: "linear-gradient(135deg,#67e8f9,#2563eb)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -38,7 +38,7 @@ export default function OpengraphImage() {
             V
           </div>
           <div style={{ display: "flex", fontSize: 44, fontWeight: 800, letterSpacing: 2 }}>
-            V <span style={{ color: "#f97316", marginLeft: 12 }}>FITNESS</span>
+            V <span style={{ color: "#22d3ee", marginLeft: 12 }}>FITNESS</span>
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -48,7 +48,7 @@ export default function OpengraphImage() {
           </div>
         </div>
         <div style={{ display: "flex", gap: 16, fontSize: 28 }}>
-          <div style={{ padding: "12px 24px", borderRadius: 999, background: "#f97316", color: "#09090b", fontWeight: 800 }}>Free 3-day trial</div>
+          <div style={{ padding: "12px 24px", borderRadius: 999, background: "#22d3ee", color: "#09090b", fontWeight: 800 }}>Free 3-day trial</div>
           <div style={{ padding: "12px 24px", borderRadius: 999, border: "2px solid #3f3f46" }}>From AED 150 / month</div>
         </div>
       </div>

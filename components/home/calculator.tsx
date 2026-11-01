@@ -65,7 +65,7 @@ export function Calculator() {
 
   return (
     <section id="calculator" aria-labelledby="calc-title" className="relative scroll-mt-24 py-20 md:py-28">
-      <div aria-hidden className="absolute inset-x-0 top-1/2 -z-10 h-[500px] -translate-y-1/2 bg-[radial-gradient(ellipse_at_center,rgba(249,115,22,0.12),transparent_65%)]" />
+      <div aria-hidden className="absolute inset-x-0 top-1/2 -z-10 h-[500px] -translate-y-1/2 bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.12),transparent_65%)]" />
       <div className="container-x">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="eyebrow justify-center"><CalcIcon className="h-4 w-4" aria-hidden /> Free fitness calculator</p>
@@ -199,8 +199,8 @@ function Slider({
         max={max}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="h-2 w-full cursor-pointer appearance-none rounded-full accent-[#f97316]"
-        style={{ background: `linear-gradient(90deg,#f97316 ${pct}%,#27272a ${pct}%)` }}
+        className="h-2 w-full cursor-pointer appearance-none rounded-full accent-[#22d3ee]"
+        style={{ background: `linear-gradient(90deg,#22d3ee ${pct}%,#27272a ${pct}%)` }}
       />
     </div>
   );

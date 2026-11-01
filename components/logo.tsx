@@ -1,27 +1,32 @@
+import Image from "next/image";
 import Link from "next/link";
 
+/** The V Fitness lifter mark on its own (for compact spots like the dashboard). */
 export function LogoMark({ className = "h-9 w-9" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 40 40" className={className} aria-hidden="true">
-      <defs>
-        <linearGradient id="vf-g" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#fb923c" />
-          <stop offset="1" stopColor="#e11d48" />
-        </linearGradient>
-      </defs>
-      <rect width="40" height="40" rx="11" fill="url(#vf-g)" />
-      <path d="M10 11h5.2l4.8 12.4L24.8 11H30l-7.6 18h-4.8z" fill="#09090b" />
-    </svg>
+    <Image
+      src="/images/logo-mark.png"
+      alt=""
+      aria-hidden
+      width={66}
+      height={66}
+      className={`object-contain drop-shadow-[0_0_10px_rgba(34,211,238,0.45)] ${className}`}
+    />
   );
 }
 
-export function Logo() {
+/** Full V Fitness logo (mark + wordmark), as used on the club's signage and campaigns. */
+export function Logo({ className = "h-11 w-auto" }: { className?: string }) {
   return (
-    <Link href="/" className="group flex items-center gap-2.5" aria-label="V Fitness — home">
-      <LogoMark className="h-9 w-9 transition-transform duration-300 group-hover:rotate-[-6deg]" />
-      <span className="font-display text-2xl font-extrabold uppercase italic tracking-wide text-white">
-        V <span className="text-brand">Fitness</span>
-      </span>
+    <Link href="/" className="group flex items-center" aria-label="V Fitness — home">
+      <Image
+        src="/images/logo.png"
+        alt="V Fitness"
+        width={180}
+        height={60}
+        priority
+        className={`transition-[filter] duration-300 group-hover:drop-shadow-[0_0_14px_rgba(34,211,238,0.7)] ${className}`}
+      />
     </Link>
   );
 }

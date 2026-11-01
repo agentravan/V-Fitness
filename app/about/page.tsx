@@ -7,7 +7,7 @@ import {
 
 import { Reveal, RevealItem, Stagger } from "@/components/motion";
 import { breadcrumbSchema, jsonLd } from "@/lib/schema";
-import { disciplines, gallery, personalTrainingFocus, site, siteUrl } from "@/lib/site";
+import { disciplines, gallery, personalTrainingFocus, photos, site, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About V Fitness & Our Facilities in International City, Dubai",
@@ -53,7 +53,7 @@ export default function AboutPage() {
       {/* Intro */}
       <section aria-labelledby="about-title" className="relative overflow-hidden pb-16 pt-14 md:pt-20">
         <div aria-hidden className="grid-bg pointer-events-none absolute inset-0 -z-10" />
-        <div aria-hidden className="pointer-events-none absolute -right-32 top-0 -z-10 h-[460px] w-[460px] rounded-full bg-rose/20 blur-[120px]" />
+        <div aria-hidden className="pointer-events-none absolute -right-32 top-0 -z-10 h-[460px] w-[460px] rounded-full bg-electric/20 blur-[120px]" />
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <p className="eyebrow">About V Fitness</p>
@@ -74,8 +74,8 @@ export default function AboutPage() {
             </div>
           </Reveal>
           <Reveal delay={0.1} className="grid grid-cols-2 gap-4">
-            {gallery.slice(1, 5).map((g, i) => (
-              <figure key={g.src} className={`relative overflow-hidden rounded-3xl border border-line bg-ink-3 ${i % 2 ? "mt-10 aspect-[3/4]" : "aspect-[3/4]"}`}>
+            {[photos.athleteMan, photos.trainers, photos.athleteWoman, photos.staff].map((g, i) => (
+              <figure key={g.src} className={`relative overflow-hidden rounded-3xl border border-brand/25 bg-ink-3 shadow-[0_0_40px_-18px_rgba(34,211,238,0.8)] ${i % 2 ? "mt-10 aspect-[3/4]" : "aspect-[3/4]"}`}>
                 <Image src={g.src} alt={g.alt} fill sizes="(min-width:1024px) 25vw, 45vw" className="object-cover transition-transform duration-700 hover:scale-105" />
               </figure>
             ))}

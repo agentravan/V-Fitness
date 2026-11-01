@@ -17,7 +17,7 @@ export function organizationGraph() {
         legalName: site.legalName,
         description: site.description,
         url: siteUrl,
-        logo: `${siteUrl}/icon.svg`,
+        logo: `${siteUrl}/images/logo.png`,
         image: `${siteUrl}/opengraph-image`,
         telephone: site.phoneE164,
         ...(site.email ? { email: site.email } : {}),

@@ -67,7 +67,7 @@ export function PricingCards() {
               whileHover={{ y: -6 }}
               className={`relative flex flex-col rounded-3xl border p-7 sm:p-8 ${
                 plan.featured
-                  ? "border-brand/60 bg-gradient-to-b from-brand/15 to-ink-2 shadow-[0_30px_80px_-30px_rgba(249,115,22,0.6)]"
+                  ? "border-brand/60 bg-gradient-to-b from-brand/15 to-ink-2 shadow-[0_30px_80px_-30px_rgba(34,211,238,0.6)]"
                   : "border-line bg-ink-2"
               }`}
               aria-labelledby={`plan-${plan.id}`}

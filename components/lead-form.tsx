@@ -120,7 +120,7 @@ export function LeadForm({ prefill, compact = false, onDone }: { prefill?: LeadP
           <input type="text" name="company" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
 
           {prefill?.program && (
-            <p className={`rounded-xl border border-brand/30 bg-brand/10 px-4 py-3 text-sm text-orange-200 ${compact ? "" : "sm:col-span-2"}`}>
+            <p className={`rounded-xl border border-brand/30 bg-brand/10 px-4 py-3 text-sm text-cyan-100 ${compact ? "" : "sm:col-span-2"}`}>
               Recommended for you: <strong className="text-white">{prefill.program}</strong>
               {prefill.goal ? ` · goal: ${prefill.goal}` : ""}
             </p>

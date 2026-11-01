@@ -19,16 +19,18 @@ export const site = {
   legalName: "V Fitness Gym",
   tagline: "Train harder. Feel welcome. Since 2008.",
   description:
-    "V Fitness is a full-service gym in Dubai International City (Spain Cluster) offering strength training, CrossFit-style conditioning, HIIT, MMA, yoga and certified personal training. Open since October 2008.",
+    "V Fitness is a full-service gym at Prime Residency II, Warsan First, Dubai International City, offering strength training, CrossFit-style conditioning, HIIT, MMA, yoga and certified personal training. Open since October 2008.",
   foundingDate: "2008-10",
-  phone: "+971 4 430 8405",
-  phoneE164: "+97144308405",
-  whatsapp: "+971 54 359 4244",
-  whatsappE164: "971543594244",
+  // Main number from the club's current campaign artwork.
+  phone: "+971 58 559 9922",
+  phoneE164: "+971585599922",
+  landline: "+971 4 430 8405",
+  whatsapp: "+971 58 559 9922",
+  whatsappE164: "971585599922",
   email: undefined as string | undefined, // TODO(confirm): public contact email
   address: {
-    street: "Shop 8, Prime Residency 2, Spain Cluster",
-    locality: "International City",
+    street: "Shop 8, Prime Residency II, Spain Cluster, Warsan First",
+    locality: "Dubai International City",
     region: "Dubai",
     country: "AE",
     countryName: "United Arab Emirates",
@@ -36,7 +38,7 @@ export const site = {
   // TODO(confirm): approximate pin for Spain Cluster, International City.
   geo: { lat: 25.1626, lng: 55.4041 },
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=V+Fitness+Prime+Residency+2+Spain+Cluster+International+City+Dubai",
+    "https://www.google.com/maps/search/?api=1&query=V+Fitness+Prime+Residency+II+Warsan+First+International+City+Dubai",
   // TODO(confirm): opening hours were not published on the original site.
   hours: [
     { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "06:00", closes: "23:00", label: "Mon – Sat" },
@@ -57,7 +59,7 @@ export const site = {
     facebook: "https://www.facebook.com/vfitnessgym1",
     instagram: "https://www.instagram.com/vfitness_dxb/",
   },
-  locations: ["International City — Spain Cluster", "Online coaching (remote)"],
+  locations: ["Prime Residency II — Warsan First, International City", "Online coaching (remote)"],
   timeSlots: ["Early morning (6–9 AM)", "Late morning (9 AM–12 PM)", "Afternoon (12–5 PM)", "Evening (5–9 PM)", "Late night (9–11 PM)"],
 } as const;
 
@@ -242,7 +244,7 @@ export const testimonials: {
 export const faqs: { q: string; a: string }[] = [
   {
     q: "Where is V Fitness located?",
-    a: "V Fitness is at Shop 8, Prime Residency 2 building, Spain Cluster, International City, Dubai, UAE — a short drive from Dubai Silicon Oasis, Warsan and Dragon Mart.",
+    a: "V Fitness is at Shop 8, Prime Residency II, Spain Cluster, Warsan First, Dubai International City, UAE — a short drive from Dubai Silicon Oasis, Warsan and Dragon Mart.",
   },
   {
     q: "How much is a gym membership at V Fitness?",
@@ -281,4 +283,22 @@ export const gallery: { src: string; alt: string }[] = [
   { src: "https://www.vfitness.com/wp-content/uploads/2023/06/IMGL1031.jpg", alt: "Selectorized resistance machines inside V Fitness" },
   { src: "https://www.vfitness.com/wp-content/uploads/2023/06/IMGL1017.jpg", alt: "Functional training space at V Fitness Spain Cluster" },
   { src: "https://www.vfitness.com/wp-content/uploads/2023/06/IMGL1008.jpg", alt: "Open gym floor at V Fitness with mirrors and equipment" },
+];
+
+/** Campaign photography (cropped from the club's own brand posters). */
+export const photos = {
+  heroDuo: { src: "/images/hero-duo.jpg", alt: "Two V Fitness members in branded training wear standing arms crossed in the gym" },
+  athleteMan: { src: "/images/athlete-man.jpg", alt: "V Fitness member drinking from a V Fitness shaker bottle with a towel over his shoulders" },
+  athleteWoman: { src: "/images/athlete-woman.jpg", alt: "Woman doing dumbbell curls at V Fitness in Dubai International City" },
+  equipment: { src: "/images/tile-equipment.jpg", alt: "Rack of rubber hex dumbbells on the V Fitness strength floor" },
+  trainers: { src: "/images/tile-trainers.jpg", alt: "V Fitness personal trainer coaching a member" },
+  clean: { src: "/images/tile-clean.jpg", alt: "Clean locker room with lockers and a bench at V Fitness" },
+  staff: { src: "/images/tile-staff.jpg", alt: "Smiling V Fitness receptionist at the front desk" },
+  burj: { src: "/images/burj.jpg", alt: "" },
+};
+
+export const posters: { src: string; alt: string }[] = [
+  { src: "/images/poster-journey.jpg", alt: "V Fitness campaign: Your fitness journey begins at V Fitness — modern equipment, supportive trainers, clean environment, friendly staff" },
+  { src: "/images/poster-experience.jpg", alt: "V Fitness campaign: The V Fitness experience — more than a gym, it's your fitness community" },
+  { src: "/images/poster-focus.jpg", alt: "V Fitness campaign: Focus, train, progress, repeat — stay consistent and see the difference" },
 ];

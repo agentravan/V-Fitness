@@ -85,7 +85,7 @@ export function Testimonials() {
                 </blockquote>
                 <figcaption className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6">
                   <div className="flex items-center gap-3">
-                    <span className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-brand to-rose font-display text-xl font-bold text-ink">
+                    <span className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-brand to-electric font-display text-xl font-bold text-ink">
                       {t.name.charAt(0)}
                     </span>
                     <div>
