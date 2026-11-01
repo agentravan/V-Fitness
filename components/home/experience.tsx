@@ -20,7 +20,7 @@ export function Experience() {
         <Reveal className="grid items-end gap-6 md:grid-cols-[1fr_auto]">
           <div>
             <p className="eyebrow">The V Fitness experience</p>
-            <h2 id="exp-title" className="mt-3 text-5xl font-extrabold uppercase italic leading-[0.9] md:text-7xl">
+            <h2 id="exp-title" className="mt-3 text-5xl font-semibold leading-[0.9] md:text-7xl">
               More than a gym — <br className="hidden md:block" />
               <span className="text-gradient">your fitness community</span>
             </h2>
@@ -46,7 +46,7 @@ export function Experience() {
                   <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <div className="absolute inset-x-0 bottom-0 p-6 lg:skew-x-6">
                     <Icon className="h-9 w-9 text-white drop-shadow-[0_0_10px_rgba(34,211,238,0.9)]" strokeWidth={1.5} aria-hidden />
-                    <h3 className="mt-3 text-3xl font-extrabold uppercase italic leading-none">{title}</h3>
+                    <h3 className="mt-3 text-3xl font-semibold leading-none">{title}</h3>
                     <p className="mt-2 text-sm text-slate-300">{text}</p>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ export function Loop() {
         <div>
           <Reveal>
             <p className="eyebrow">How we coach</p>
-            <h2 id="loop-title" className="mt-4 font-extrabold uppercase italic leading-[0.86]">
+            <h2 id="loop-title" className="mt-4 font-semibold leading-[0.86]">
               <span className="block text-6xl md:text-8xl">Focus</span>
               <span className="block text-6xl md:text-8xl">Train</span>
               <span className="block text-6xl md:text-8xl">Progress</span>
@@ -94,11 +94,11 @@ export function Loop() {
                 <div className="relative flex flex-col items-center text-center">
                   <span className="relative grid h-[4.5rem] w-[4.5rem] place-items-center rounded-2xl border border-brand/40 bg-ink-2 shadow-[0_0_30px_-10px_rgba(34,211,238,0.9)]">
                     <Icon className="h-8 w-8 text-white" strokeWidth={1.5} aria-hidden />
-                    <span className="absolute -right-2 -top-2 grid h-6 w-6 place-items-center rounded-full bg-brand font-display text-xs font-extrabold text-ink">
+                    <span className="absolute -right-2 -top-2 grid h-6 w-6 place-items-center rounded-full bg-brand text-xs font-extrabold text-ink">
                       {i + 1}
                     </span>
                   </span>
-                  <h3 className="mt-3 font-display text-lg font-bold italic leading-tight">{title}</h3>
+                  <h3 className="mt-3 text-lg font-semibold leading-tight">{title}</h3>
                 </div>
               </RevealItem>
             ))}
@@ -113,7 +113,7 @@ export function Loop() {
           </div>
           <div className="hud card absolute bottom-10 left-0 rounded-xl px-4 py-3">
             <p className="text-[10px] uppercase tracking-[0.25em] text-brand">Your plan</p>
-            <p className="font-display text-2xl font-extrabold italic text-white">Built for you</p>
+            <p className="text-2xl font-semibold text-white">Built for you</p>
           </div>
           <div className="hud card absolute right-0 top-10 flex items-center gap-2 rounded-xl px-4 py-3">
             <BellRing className="h-4 w-4 text-brand" aria-hidden />
@@ -132,7 +132,7 @@ export function Campaign() {
       <Reveal className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
         <div>
           <p className="eyebrow">On the gram</p>
-          <h2 id="campaign-title" className="mt-3 text-5xl font-extrabold uppercase italic md:text-6xl">
+          <h2 id="campaign-title" className="mt-3 text-5xl font-semibold md:text-6xl">
             Join the <span className="text-gradient">movement</span>
           </h2>
         </div>

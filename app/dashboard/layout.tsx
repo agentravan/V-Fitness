@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
-  return <div className="min-h-dvh bg-ink">{children}</div>;
+  return <div className="-mt-16 min-h-dvh bg-black md:-mt-[76px]">{children}</div>;
 }

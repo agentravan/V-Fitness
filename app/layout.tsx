@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Barlow_Condensed, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { Header } from "@/components/header";
@@ -10,13 +10,6 @@ import { organizationGraph, jsonLd } from "@/lib/schema";
 import { site, siteUrl } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const barlow = Barlow_Condensed({
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
-  style: ["normal", "italic"],
-  variable: "--font-barlow",
-  display: "swap",
-});
 
 const title = "V Fitness | Gym in International City, Dubai — Strength, CrossFit, HIIT & PT";
 const description =
@@ -72,7 +65,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#09090b",
+  themeColor: "#000000",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -80,7 +73,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${barlow.variable}`}>
+    <html lang="en" className={inter.variable}>
       <body className="min-h-dvh bg-ink antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(organizationGraph())} />
         <a
@@ -93,7 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <MarketingOnly>
             <Header />
           </MarketingOnly>
-          <main id="main">{children}</main>
+          <main id="main" className="pt-16 md:pt-[76px]">{children}</main>
           <MarketingOnly>
             <Footer />
           </MarketingOnly>

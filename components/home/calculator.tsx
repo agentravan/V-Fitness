@@ -69,7 +69,7 @@ export function Calculator() {
       <div className="container-x">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="eyebrow justify-center"><CalcIcon className="h-4 w-4" aria-hidden /> Free fitness calculator</p>
-          <h2 id="calc-title" className="mt-3 text-5xl font-extrabold uppercase italic md:text-6xl">
+          <h2 id="calc-title" className="mt-3 text-5xl font-semibold md:text-6xl">
             Know your <span className="text-gradient">numbers</span>
           </h2>
           <p className="mt-4 text-slate-400">
@@ -145,7 +145,7 @@ export function Calculator() {
                 <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand">
                   <Target className="h-4 w-4" aria-hidden /> Coach recommendation
                 </p>
-                <h3 className="mt-2 text-3xl font-bold uppercase">
+                <h3 className="mt-2 text-3xl font-semibold">
                   {r.rec.program} <span className="text-slate-500">+</span> {r.rec.plan}
                 </h3>
                 <p className="mt-2 text-sm text-slate-300">{r.rec.why}</p>
@@ -173,7 +173,7 @@ function Stat({ label, value, sub }: { label: string; value: string; sub: React.
   return (
     <div className="rounded-2xl border border-line bg-ink/60 p-4">
       <p className="text-xs uppercase tracking-wider text-slate-500">{label}</p>
-      <p className="mt-1 font-display text-3xl font-bold text-white tabular-nums">{value}</p>
+      <p className="mt-1 text-3xl font-semibold text-white tabular-nums">{value}</p>
       <p className="mt-1 text-xs text-slate-400">{sub}</p>
     </div>
   );
@@ -188,7 +188,7 @@ function Slider({
     <div>
       <div className="mb-2 flex items-center justify-between">
         <label htmlFor={id} className="text-xs font-medium uppercase tracking-wider text-slate-400">{label}</label>
-        <span className="font-display text-xl font-bold text-white tabular-nums">
+        <span className="text-xl font-semibold text-white tabular-nums">
           {value} <span className="text-sm text-slate-500">{unit}</span>
         </span>
       </div>

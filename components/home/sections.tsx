@@ -11,7 +11,7 @@ export function DisciplineMarquee() {
       <div className="overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]">
         <ul className="flex w-max animate-marquee gap-10 hover:[animation-play-state:paused]">
           {items.map((d, i) => (
-            <li key={i} aria-hidden={i >= disciplines.length} className="flex items-center gap-10 font-display text-3xl font-bold uppercase italic text-slate-200">
+            <li key={i} aria-hidden={i >= disciplines.length} className="flex items-center gap-10 text-3xl font-semibold text-slate-200">
               {d}
               <span className="text-brand" aria-hidden>✦</span>
             </li>
@@ -28,7 +28,7 @@ export function Faq() {
       <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal>
           <p className="eyebrow">FAQ</p>
-          <h2 id="faq-title" className="mt-3 text-5xl font-extrabold uppercase italic md:text-6xl">
+          <h2 id="faq-title" className="mt-3 section-title">
             Good <span className="text-gradient">questions</span>
           </h2>
           <p className="mt-4 text-slate-400">
@@ -54,14 +54,14 @@ export function Faq() {
 export function TrialSection() {
   return (
     <section id="trial" aria-labelledby="trial-title" className="container-x scroll-mt-24 py-12">
-      <Reveal className="relative overflow-hidden rounded-[2rem] border border-line bg-ink-2 p-6 sm:p-10 lg:p-14">
+      <Reveal className="relative overflow-hidden rounded-3xl border border-line bg-ink-2 p-6 sm:p-10 lg:p-14">
         <div aria-hidden className="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full bg-brand/25 blur-3xl" />
         <div aria-hidden className="pointer-events-none absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-electric/20 blur-3xl" />
         <div className="relative grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <p className="eyebrow">Free 3-day pass</p>
-            <h2 id="trial-title" className="mt-3 text-5xl font-extrabold uppercase italic md:text-6xl">
-              Your first <span className="text-gradient">3 days</span> are on us
+            <p className="eyebrow">Get in touch</p>
+            <h2 id="trial-title" className="mt-3 section-title">
+              Start with a free <span className="text-gradient">3-day pass</span>
             </h2>
             <p className="mt-4 text-slate-400">
               Full gym access, a fitness assessment and a coach-led walkthrough. No card, no contract.

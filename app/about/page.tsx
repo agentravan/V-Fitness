@@ -57,7 +57,7 @@ export default function AboutPage() {
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <p className="eyebrow">About V Fitness</p>
-            <h1 id="about-title" className="mt-3 text-[clamp(2.75rem,7vw,5.5rem)] font-extrabold uppercase italic leading-[0.9]">
+            <h1 id="about-title" className="mt-3 text-[clamp(2.75rem,7vw,5.5rem)] font-semibold leading-[0.9]">
               Built for <span className="text-gradient">every body</span> since 2008
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-400">
@@ -87,7 +87,7 @@ export default function AboutPage() {
       <section aria-labelledby="facilities-title" className="container-x py-16 md:py-24">
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Facilities</p>
-          <h2 id="facilities-title" className="mt-3 text-5xl font-extrabold uppercase italic md:text-6xl">
+          <h2 id="facilities-title" className="mt-3 text-5xl font-semibold md:text-6xl">
             Everything you need. <span className="text-gradient">Nothing you don&apos;t.</span>
           </h2>
         </Reveal>
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand transition-transform group-hover:scale-110">
                   <Icon className="h-5 w-5" aria-hidden />
                 </span>
-                <h3 className="mt-5 text-2xl font-bold uppercase">{title}</h3>
+                <h3 className="mt-5 text-2xl font-semibold">{title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">{text}</p>
               </article>
             </RevealItem>
@@ -111,7 +111,7 @@ export default function AboutPage() {
         <div className="container-x grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
             <p className="eyebrow">Personal training</p>
-            <h2 id="trainers-title" className="mt-3 text-5xl font-extrabold uppercase italic md:text-6xl">
+            <h2 id="trainers-title" className="mt-3 text-5xl font-semibold md:text-6xl">
               Coaches who <span className="text-gradient">teach</span>
             </h2>
             <p className="mt-5 leading-relaxed text-slate-400">
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 <article className="card relative h-full overflow-hidden p-6">
                   <div aria-hidden className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand/15 blur-2xl" />
                   <Icon className="h-7 w-7 text-brand" aria-hidden />
-                  <h3 className="mt-5 text-2xl font-bold uppercase">{role}</h3>
+                  <h3 className="mt-5 text-2xl font-semibold">{role}</h3>
                   <p className="mt-2 text-sm text-slate-400">{focus}</p>
                 </article>
               </RevealItem>
@@ -144,7 +144,7 @@ export default function AboutPage() {
       {/* Story */}
       <section aria-labelledby="story-title" className="container-x py-16 md:py-24">
         <Reveal>
-          <h2 id="story-title" className="text-center text-5xl font-extrabold uppercase italic md:text-6xl">
+          <h2 id="story-title" className="text-center text-5xl font-semibold md:text-6xl">
             Our <span className="text-gradient">story</span>
           </h2>
         </Reveal>
@@ -153,8 +153,8 @@ export default function AboutPage() {
             <li key={t.year} className="relative pb-10 last:pb-0">
               <Reveal delay={i * 0.05}>
                 <span className="absolute -left-[41px] top-1 grid h-5 w-5 place-items-center rounded-full border-4 border-ink bg-brand" aria-hidden />
-                <p className="font-display text-xl font-bold text-brand">{t.year}</p>
-                <h3 className="mt-1 text-3xl font-bold uppercase">{t.title}</h3>
+                <p className="text-xl font-semibold text-brand">{t.year}</p>
+                <h3 className="mt-1 text-3xl font-semibold">{t.title}</h3>
                 <p className="mt-2 text-slate-400">{t.text}</p>
               </Reveal>
             </li>
@@ -165,7 +165,7 @@ export default function AboutPage() {
       {/* Gallery + disciplines */}
       <section aria-labelledby="gallery-title" className="container-x py-12">
         <Reveal>
-          <h2 id="gallery-title" className="text-4xl font-extrabold uppercase italic md:text-5xl">Inside the club</h2>
+          <h2 id="gallery-title" className="text-4xl font-semibold md:text-5xl">Inside the club</h2>
           <p className="mt-2 text-slate-400">{disciplines.join(" · ")}</p>
         </Reveal>
         <Stagger className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">

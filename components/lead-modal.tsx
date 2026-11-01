@@ -103,7 +103,7 @@ export function LeadProvider({ children }: { children: React.ReactNode }) {
                 <X className="h-4 w-4" />
               </button>
               <p className="eyebrow">No payment · No commitment</p>
-              <h2 id="lead-modal-title" className="mt-2 text-4xl font-extrabold uppercase italic">
+              <h2 id="lead-modal-title" className="mt-2 text-4xl font-semibold">
                 Book your <span className="text-gradient">free 3-day trial</span>
               </h2>
               <p className="mb-6 mt-2 text-slate-400">Pick a time that suits you — we&apos;ll have a coach ready.</p>

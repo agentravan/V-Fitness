@@ -269,10 +269,11 @@ export const faqs: { q: string; a: string }[] = [
 ];
 
 export const nav = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About & Facilities" },
-  { href: "/pricing", label: "Memberships" },
-  { href: "/dashboard", label: "Demo Portal" },
+  { href: "/#training", label: "Training" },
+  { href: "/#classes", label: "Classes" },
+  { href: "/#refuel", label: "Fuel Bar" },
+  { href: "/pricing", label: "Membership" },
+  { href: "/about", label: "About" },
 ];
 
 /** Original club photography hosted on the existing site. */

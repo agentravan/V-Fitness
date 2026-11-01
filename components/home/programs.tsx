@@ -36,7 +36,7 @@ export function Programs() {
     <section id="programs" aria-labelledby="programs-title" className="container-x scroll-mt-24 py-20 md:py-28">
       <Reveal className="mx-auto max-w-2xl text-center">
         <p className="eyebrow justify-center">Programs</p>
-        <h2 id="programs-title" className="mt-3 text-5xl font-extrabold uppercase italic md:text-6xl">
+        <h2 id="programs-title" className="mt-3 text-5xl font-semibold md:text-6xl">
           Pick your <span className="text-gradient">battle</span>
         </h2>
         <p className="mt-4 text-slate-400">
@@ -74,7 +74,7 @@ export function Programs() {
               <span className="relative grid h-12 w-12 place-items-center rounded-2xl border border-brand/40 bg-ink text-brand shadow-[0_0_24px_-6px_rgba(34,211,238,0.9)] transition-transform duration-300 group-hover:rotate-[-8deg] group-hover:scale-110">
                 <Icon className="h-6 w-6" aria-hidden />
               </span>
-              <h3 className="mt-5 text-3xl font-extrabold uppercase italic leading-none">{p.title}</h3>
+              <h3 className="mt-5 text-3xl font-semibold leading-none">{p.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-400">{p.blurb}</p>
 
               <ul className="mt-5 space-y-2 text-sm text-slate-300">

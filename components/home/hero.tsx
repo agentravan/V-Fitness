@@ -73,7 +73,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.05, ease }}
-            className="mt-7 font-extrabold uppercase italic leading-[0.86]"
+            className="mt-7 font-semibold leading-[0.86]"
           >
             <span className="block text-[clamp(2.6rem,7vw,5.6rem)]">Your</span>
             <span className="text-gradient block text-[clamp(3.2rem,9vw,7.25rem)]">Fitness</span>
@@ -129,7 +129,7 @@ export function Hero() {
             <span className="grid h-10 w-10 place-items-center rounded-full border border-brand/50 bg-brand/10 text-brand shadow-[0_0_20px_-4px_rgba(34,211,238,0.8)]">
               <Phone className="h-4 w-4" aria-hidden />
             </span>
-            <span className="font-display text-xl font-bold italic tracking-wide">{site.phone}</span>
+            <span className="text-xl font-semibold tracking-wide">{site.phone}</span>
           </motion.a>
         </div>
 
@@ -146,7 +146,7 @@ export function Hero() {
           className="hud card absolute right-[6%] top-[14%] hidden rounded-xl px-4 py-3 xl:block"
         >
           <p className="text-[10px] uppercase tracking-[0.25em] text-slate-400">Established</p>
-          <p className="font-display text-3xl font-extrabold italic text-white">Oct 2008</p>
+          <p className="text-3xl font-semibold text-white">Oct 2008</p>
         </motion.div>
         <motion.button
           onClick={() => open()}
@@ -156,7 +156,7 @@ export function Hero() {
           className="hud card absolute right-[30%] top-[44%] hidden rounded-xl px-4 py-3 text-left xl:block"
         >
           <span className="block text-[10px] uppercase tracking-[0.25em] text-brand">Free pass</span>
-          <span className="block font-display text-2xl font-extrabold italic text-white">3-Day Trial</span>
+          <span className="block text-2xl font-semibold text-white">3-Day Trial</span>
         </motion.button>
 
         {/* feature strip */}
@@ -175,7 +175,7 @@ export function Hero() {
               className={`neon-border flex flex-col items-center gap-2 rounded-2xl bg-ink-2/75 px-3 py-4 text-center backdrop-blur-md ${i === 4 ? "col-span-2 sm:col-span-1" : ""}`}
             >
               <Icon className="h-7 w-7 text-white drop-shadow-[0_0_8px_rgba(34,211,238,0.9)]" strokeWidth={1.6} aria-hidden />
-              <span className="font-display text-base font-bold italic leading-tight text-white">{label}</span>
+              <span className="text-base font-semibold leading-tight text-white">{label}</span>
             </motion.li>
           ))}
         </motion.ul>

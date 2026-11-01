@@ -77,7 +77,7 @@ export function PricingCards() {
                   <Sparkles className="h-3.5 w-3.5" aria-hidden /> Most popular
                 </span>
               )}
-              <h3 id={`plan-${plan.id}`} className="text-3xl font-bold uppercase">{plan.name}</h3>
+              <h3 id={`plan-${plan.id}`} className="text-3xl font-semibold">{plan.name}</h3>
               <p className="mt-2 min-h-[3rem] text-sm text-slate-400">{plan.summary}</p>
 
               <div className="mt-6 min-h-[7.5rem]">
@@ -91,7 +91,7 @@ export function PricingCards() {
                   >
                     <p className="flex items-baseline gap-2">
                       <span className="text-sm font-semibold text-slate-400">AED</span>
-                      <span className="font-display text-6xl font-extrabold text-white tabular-nums">{fmt(total)}</span>
+                      <span className="text-6xl font-extrabold text-white tabular-nums">{fmt(total)}</span>
                       <span className="text-sm text-slate-500">/ {months === 1 ? "month" : `${months} months`}</span>
                     </p>
                     <p className="mt-2 text-sm text-slate-400">

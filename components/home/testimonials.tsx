@@ -28,7 +28,7 @@ export function Testimonials() {
       <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal>
           <p className="eyebrow">Transformations</p>
-          <h2 id="proof-title" className="mt-3 text-5xl font-extrabold uppercase italic md:text-6xl">
+          <h2 id="proof-title" className="mt-3 text-5xl font-semibold md:text-6xl">
             Real people. <br /><span className="text-gradient">Real progress.</span>
           </h2>
           <p className="mt-4 max-w-md text-slate-400">
@@ -85,7 +85,7 @@ export function Testimonials() {
                 </blockquote>
                 <figcaption className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6">
                   <div className="flex items-center gap-3">
-                    <span className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-brand to-electric font-display text-xl font-bold text-ink">
+                    <span className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-brand to-electric text-xl font-semibold text-ink">
                       {t.name.charAt(0)}
                     </span>
                     <div>

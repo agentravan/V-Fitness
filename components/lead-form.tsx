@@ -67,7 +67,7 @@ export function LeadForm({ prefill, compact = false, onDone }: { prefill?: LeadP
           role="status"
         >
           <CheckCircle2 className="h-14 w-14 text-brand" aria-hidden />
-          <h3 className="text-3xl font-bold uppercase">You&apos;re in, {submittedName}!</h3>
+          <h3 className="text-3xl font-semibold">You&apos;re in, {submittedName}!</h3>
           <p className="max-w-sm text-slate-400">
             Our team will call or WhatsApp you within one working day to confirm your free 3-day trial.
           </p>
