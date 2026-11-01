@@ -333,7 +333,7 @@ export function AppTeaser() {
           <Reveal delay={0.1}>
             <div className="card p-4 shadow-[0_40px_120px_-40px_rgba(0,212,220,0.6)]">
               <div className="grid grid-cols-2 gap-3">
-                {[["Active members", "248"], ["Checked in today", "42"], ["Shop orders today", "17"], ["PT sessions left", "312"]].map(([k, v]) => (
+                {[["Active members", "248"], ["Checked in today", "42"], ["Shop orders today", "17"], ["PT sessions left", "429"]].map(([k, v]) => (
                   <div key={k} className="rounded-xl border border-white/10 bg-black p-4">
                     <p className="text-xs text-white/50">{k}</p>
                     <p className="mt-1 text-3xl font-semibold">{v}</p>

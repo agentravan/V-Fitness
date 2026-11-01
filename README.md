@@ -47,6 +47,17 @@ Before launch, confirm the items marked `TODO(confirm)` in that file:
 - `/llms.txt` plain-text brief for LLM crawlers; `robots.txt` allows public pages and blocks `/dashboard` and `/api`
 - Semantic landmarks (`header`, `main`, `section`, `article`, `footer`, `address`), one `h1` per page, descriptive `alt` text, skip link, reduced-motion support
 
-## Demo portal
+## Club OS demo portal (`/dashboard`)
 
-Data is generated deterministically in the browser relative to today, so the demo always looks current: **248 active members** (12 expiring within 7 days), 26 expired, **42 check-ins today** and **$12,450** monthly revenue. Attendance toggles and reminders update the KPIs live and persist in `localStorage` for the day; **Reset demo data** restores the defaults. Reminder sending is simulated — wire `sendReminder` in `app/dashboard/page.tsx` to the WhatsApp Business API, an SMS gateway or email provider for production.
+Staff sign-in (Admin / Front desk / Trainer) with a 1-click demo login (`demo@vfitness.com` / `demo`). All data is generated in the browser relative to today and saved in `localStorage` for the day; **Reset demo data** restores it.
+
+| Module | What it does |
+| --- | --- |
+| Overview | KPIs (248 active, 42 check-ins, 12 expiring, shop sales, PT sessions, monthly revenue), 12-month revenue chart, live check-ins, expiring list with bulk reminders, top sellers, low-stock alert, activity log |
+| Attendance | Check-in desk (search or simulated QR scan), check-out, hourly and 7-day charts, today's log with time in/out and duration |
+| Members | Customer tracking with search, status/plan filters (incl. "At risk"), sort, pagination, profile drawer (8-week visit grid, packages, orders, renew, remind, check-in), add member |
+| Orders | Protein bar & pro shop POS (categories, cart, card/cash/member account), orders list with paid/collected workflow, inventory with low-stock and restock |
+| Packages | PT and class-pack tracker: sessions used/left, log session, renew, ending-soon reminders, plan mix and trainer load |
+| Analytics | Joins vs churn, active-member trend, retention, visit frequency, revenue mix, demographics and goals, weekday × hour peak grid, top products, at-risk win-back list |
+
+Reminder and win-back sending is simulated — connect `sendReminder` in `components/dashboard/store.tsx` to the WhatsApp Business API, an SMS gateway or email provider for production. Prices in the portal are in AED.

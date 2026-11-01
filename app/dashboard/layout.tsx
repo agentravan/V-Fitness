@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gym Management Demo Portal",
-  description: "Interactive demo of the V Fitness member management dashboard: attendance, expiring memberships and renewal reminders.",
+  title: "Club OS — Gym Management Demo",
+  description: "Interactive demo of V Fitness Club OS: attendance check-in, member tracking, protein bar orders, PT package tracker and customer analytics.",
   robots: { index: false, follow: false },
   alternates: { canonical: "/dashboard" },
 };
